@@ -60,7 +60,10 @@ async function initAd() {
         tl.to(image, { opacity: 1, duration: 0.5 })
           .to(headline, { opacity: 1, y: -5, duration: 0.5 }, "-=0.2")
           .to(subhead, { opacity: 1, y: -5, duration: 0.5 }, "-=0.3")
-          .to(cta, { opacity: 1, scale: 1.05, duration: 0.3, yoyo: true, repeat: 1 }, "+=0.2");
+          // 1. Fade the button in and keep it visible
+          .to(cta, { opacity: 1, duration: 0.3 }, "-=0.1")
+          // 2. Pulse the button (scale it up and down) without affecting opacity
+          .to(cta, { scale: 1.05, duration: 0.2, yoyo: true, repeat: 1 });
 
     } catch (error) {
         console.error("Feed error:", error);
