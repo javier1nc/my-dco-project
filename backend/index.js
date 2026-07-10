@@ -7,12 +7,11 @@ app.use(cors());
 
 // Mock Dynamic Data Feed
 app.get('/api/feed', (req, res) => {
-    // In a real agency setting, this data might change based on user geolocation or time of day
     res.json({
         headline: "¡Oferta Especial de Otoño!",
         subhead: "Ahorra un 50% en toda la tienda hoy.",
         cta: "Comprar Ahora",
-        imageUrl: "https://via.placeholder.com/300x250/ff4500/ffffff?text=Autumn+Sale"
+        imageUrl: "https://images.unsplash.com/photo-1477414956199-7dafc86a4f1a?w=300&h=250&fit=crop"
     });
 });
 
