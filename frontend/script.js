@@ -34,7 +34,8 @@ function fitTextBinary(element, minSize = 10, maxSize = 34) {
 async function initAd() {
     try {
         // IMPORTANT: Change this URL to your live Railway URL before deploying to Vercel!
-        const API_URL = 'http://localhost:3000/api/feed'; 
+        //const API_URL = 'http://localhost:3000/api/feed';
+        const API_URL = 'https://YOUR-RAILWAY-DOMAIN.up.railway.app/api/feed'; 
         
         const response = await fetch(API_URL);
         const data = await response.json();
