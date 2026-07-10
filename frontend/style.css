@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5e5e5;
+}
+
+#ad-container {
+    width: 300px;
+    height: 250px;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+#ad-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hidden until GSAP reveals it */
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 260px;
+    height: 100px; /* Strict height limit for the text scaler to measure against */
+    z-index: 2;
+}
+
+#ad-headline, #ad-subhead, #ad-cta {
+    margin: 0;
+    opacity: 0; 
+}
+
+#ad-headline {
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+#ad-subhead {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#ad-cta {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #ff4500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+}
