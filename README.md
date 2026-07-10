@@ -4,13 +4,13 @@ A decoupled, high-performance HTML5 display ad system designed for scalable, glo
 
 This project demonstrates a modern approach to DCO by separating the visual frontend execution from the dynamic data feed. It solves common localization and production bottlenecks by using programmatic text-fitting and dynamic asset injection.
 
-## 🔗 Live Demos
-* **Frontend Execution (Vercel):** [https://my-dco-project.vercel.app]
-* **Dynamic Data Feed (Railway):** [my-dco-projectback-production.up.railway.app]/api/feed
+##  Live Demos
+* **Frontend Execution (Vercel):** https://my-dco-project.vercel.app
+* **Dynamic Data Feed (Railway):** https://my-dco-projectback-production.up.railway.app/api/feed
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+##  Architecture & Tech Stack
 
 Instead of hard-coding assets into the HTML or relying on heavy proprietary ad builders, this system uses a decoupled micro-architecture:
 
@@ -23,7 +23,7 @@ By keeping the data (backend) completely separate from the design (frontend), a 
 
 ---
 
-## ✨ Key Technical Features
+##  Key Technical Features
 
 ### 1. Algorithmic Text Scaling (Binary Search)
 When localizing campaigns, translating English copy to languages like German or Spanish often breaks design layouts due to character expansion. 
@@ -40,7 +40,7 @@ When localizing campaigns, translating English copy to languages like German or 
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 If you want to pull this repository and run the DCO pipeline on your local machine:
 
